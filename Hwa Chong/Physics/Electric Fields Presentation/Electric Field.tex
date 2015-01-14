@@ -1,0 +1,358 @@
+% Copyright 2004 by Till Tantau <tantau@users.sourceforge.net>.
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+
+\documentclass{beamer}
+\usepackage{caption}
+
+% There are many different themes available for Beamer. A comprehensive
+% list with examples is given here:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+% You can uncomment the themes below if you would like to use a different
+% one:r
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{boxes}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{default}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+\title{Electric Fields}
+% A subtitle is optional and this may be deleted
+\subtitle{Proudly made with \LaTeX}
+\author{Benedict Lee, Zeng Fan Pu}
+\institute[Hwa Chong Institution] % (optional, but mostly needed)
+
+\date{15 January, 2015}
+\subject{Theoretical Computer Science}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+
+% Let's get started
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% Section and subsections will appear in the presentation overview
+% and table of contents.
+\section{First Main Section}
+
+\begin{frame}{Expectations}{}
+  \begin{itemize}
+  \item Please pay attention to this electrifying presentation
+  \item If not you'll miss out on a lot of important content, such as this	 joke:\\Q: What is the name of the first electricity detective?\\A: Sherlock Ohms 
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Analogy with Gravity}{}
+  \begin{itemize}
+  \item Please flip to pg. 26 of your notes
+  \item Notice how similar the laws governing electric fields and gravitational fields are?
+  \item Please keep that in mind as we go through the presentation!
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Charges}{}
+  \begin{itemize}
+  \item Two kinds of charges: Positive charge and negative charge
+  \item Like charges repel, unlike charges attract 
+  \item To charge a body negatively, we can add electrons or \textit{(rarely)} remove protons
+  \item To charge a body positively, we can remove protons or \textit{(rarely)} add electrons
+  \end{itemize}
+  \begin{center}
+
+    \label{table:second}
+    \setlength{\tabcolsep}{2pt}
+    \small
+    \begin{tabular}{|c|c|c|c|} \hline
+       & Charge & Mass \\ \hline
+       Electron & -e  = 1.60 x 10-19 C & 9.11 x 10-31 kg \\ \hline
+       Proton & +e = 1.60 x 10-19 C & 1.67 x 10-27 kg \\ \hline
+       Neutron & No charge (0 C) & 1.68 x 10-27 kg \\ \hline
+    \end{tabular}
+    \captionof{table}{Let's see who can memorize this table the fastest}
+  \end{center}%
+\end{frame}
+
+\begin{frame}{Principle of Conservation of Charges}
+\begin{block}{Principle of Conservation of Charges}
+The principle of conservation of charges states that charges cannot be created nor destroyed.  Hence, for any closed system, the sum of all electric charges must be constant.
+\end{block}
+\end{frame}
+
+\begin{frame}{Principle of Conservation of Charges}
+If a system starts out with an equal number of positive and negative charges, there¹s nothing we can do to create an excess of one kind of charge in that system unless we bring in charge from outside the system (or remove some charge from the system). Likewise, if something starts out with a certain net charge, say +100 e, it will always have +100 e unless it is allowed to interact with something external to it. 
+\end{frame}
+
+\begin{frame}
+\begin{block}{Principle of Quantization of Charges}
+The charge on a single electron is \(q_e=1.60\cdot10^{19}C\) (remember that \(1C=6.242\cdot 10^{18}e\)). All other charges in the universe consist of an integer multiple of this charge. This is known as charge quantisation:
+\[Q=nq_e\]
+\end{block}
+Electrons and protons are not the only things that carry charge. Other particles (positrons, for example) also carry charge in multiples of the electronic charge.  
+\end{frame}
+
+\begin{frame}{Electric Field}{}
+\begin{definition}
+An electric field is a region of space such that when a charge is placed at a point in the region, it would experience an electrical force acting on it.
+\end{definition}
+\end{frame}
+
+\begin{frame}{Electric Field Strength}
+\begin{definition}
+The electric field strength at a given point is the force per unit positive charge that acts on a small test charge placed at that point.
+\end{definition}
+\[E=\frac{F}{q}\]
+Rearranging, we get
+\[F=q\cdot E\]
+Direction of force on charge is dependent on the sign of the charge!\\
+Let's work out Example 1 together.
+\end{frame}
+
+\begin{frame}{Drawing Electric Field Lines}{}
+  \begin{itemize}
+	\item  Electric field lines always extend from a positively charged object to a negatively charged object, from a positively charged object to infinity, or from infinity to a negatively charged object.
+  \end{itemize}
+\begin{figure}
+\includegraphics[scale=0.45]{fieldlines}
+\caption{Representing Electric Field Lines}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Drawing Electric Field Lines}{}
+  \begin{itemize}
+	\item Number of lines drawn is proportional to magnitude of the charge
+  \end{itemize}
+\begin{figure}
+\includegraphics[scale=0.45]{fieldlines}
+\caption{Representing Electric Field Lines}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Drawing Electric Field Lines}{}
+  \begin{itemize}
+	\item Field lines do not “cross” because the direction of E at a point is unique.
+  \end{itemize}
+\begin{figure}
+\includegraphics[scale=0.45]{fieldlines}
+\caption{Representing Electric Field Lines}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Drawing Electric Field Lines}{}
+  \begin{itemize}
+	\item  At locations where electric field lines meet the surface of an object, the lines are perpendicular to the surface
+  \end{itemize}
+\begin{figure}
+\includegraphics[scale=0.45]{fieldlines}
+\caption{Representing Electric Field Lines}
+\end{figure}
+\end{frame}
+
+	
+\begin{frame}{Electric Field Lines as an Invisible Reality}{}
+  \begin{itemize}
+    \item Electric field lines are not real!
+	\item The concept of an electric field arose as scientists attempted to explain the action-at-a-distance that occurs between charged objects
+	\item First introduced by 19th century physicist Michael Faraday
+	\item Rather than thinking in terms of one charge affecting another charge, Faraday used the concept of a field to propose that a charged object (or a massive object in the case of a gravitational field) affects the space that surrounds it
+	\item  As another object enters that space, it becomes affected by the field established in that space
+	\item Viewed in this manner, a charge is seen to interact with an electric field as opposed to with another charge
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Are you still with us?}
+Where do electrons play football? On an electric field!
+\end{frame}
+
+\begin{frame}{Force between Two Point Charges}
+  \begin{block}{Coloumb's Law}
+The magnitude of the electrical force acting between two point charges is proportional to the product of the magnitude of the charges and inversely proportional to the square of the distance between them.
+\[F=\frac{1}{4\pi \epsilon_0} \cdot \frac{QQ\prime}{r^2} \]
+  \end{block}
+\end{frame}
+
+\begin{frame}{Permittivity}{}
+  \begin{itemize}
+  \item Permittivity is the measure of the resistance that is encountered when forming an electric field in a medium. In other words, permittivity is a measure of how an electric field affects, and is affected by, a dielectric medium.
+  \item \(\epsilon_0\) is equal to approximately \(8.85 \cdot 10^{12}\) farad per meter \(Fm^{-1}\) in free space (a vacuum)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Principle of Superposition}
+\begin{block}{Principle of Superposition (for electrical forces)}
+The resultant force on any one of them equals to the vector sum of the forces exerted by the other individual charges.
+\end{block}
+
+Let's work out Example 2 together.
+\end{frame}
+
+\begin{frame}{Electric Field around a Point Charge}{}
+  \begin{itemize}
+  \item Recall Coloumb's Law
+\[F=\frac{1}{4\pi \epsilon_0} \cdot \frac{Qq}{r^2} \]
+\begin{block}{Electric Field Strength}
+The magnitude of the electric field strength of a point charge \(Q\) at a distance \(r\) away from the field is
+\[E=\frac{F}{q}\]
+\[E=\frac{1}{4\pi \epsilon_0} \cdot \frac{Q}{r^2}\]
+\end{block}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Electric Field around a Point Charge}{}
+  \begin{itemize}
+  \item Analogous to gravitational field strength
+  \item Instead of \(g=\frac{F_g}{m}\), we now have \(E=\frac{F_E}{q}\)!
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Electric Field around a Point Charge}{}
+  \begin{itemize}
+  \item \(E\) is a vector quantity, and its direction is at a point is given by the direction of the force experienced by a positive charge if it is placed at that point.
+  \item The field is radial of a point charge. It is directed uniformly in all directions outward from the centre if \(Q\) is a positive charge and inward toward the centre if \(Q\) is a negative charge. At all points that are equal distance away from \(Q\) the magnitude of \(E\) is the same.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Principle of Superposition (for Electric Field)}{}
+  \begin{itemize}
+\begin{block}{Principle of Superposition (for Electric Field)}
+The resultant electric field \(E\) at a point \(P\) in an electric field is the vector sum of the fields at \(P\) due to each point charge in the system.
+\end{block}
+  \item Very intuitive, right?
+  \item Let's now work on Example 3 together.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Electric Potential}{}
+  \begin{itemize}
+\begin{block}{Definition of Electric Potential}
+The electric potential V, at a point in an electric field, is defined as the work done per unit positive charge, by an external force, in moving a small test charge from infinity to that point in the electric field.
+\[V=\frac{W}{q}\]
+\end{block}
+  \item SI unit of electric potential is \(JC^{-1}\) but it is more common to use the volt, \(V\)
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Template}{}
+  \begin{itemize}
+  \item first
+  \item second
+  \end{itemize}
+\end{frame}
+
+
+%%%OLD STUFF
+\begin{frame}{Blocks}
+\begin{block}{Block Title}
+You can also highlight sections of your presentation in a block, with it's own title
+\end{block}
+\begin{theorem}
+There are separate environments for theorems, examples, definitions and proofs.
+\end{theorem}
+\begin{example}
+Here is an example of an example block.
+\end{example}
+\end{frame}
+
+% Placing a * after \section means it will not show in the
+% outline or table of contents.
+\section*{Summary}
+
+\begin{frame}{Summary}
+  \begin{itemize}
+  \item
+    The \alert{first main message} of your talk in one or two lines.
+  \item
+    The \alert{second main message} of your talk in one or two lines.
+  \item
+    Perhaps a \alert{third message}, but not more than that.
+  \end{itemize}
+  
+  \begin{itemize}
+  \item
+    Outlook
+    \begin{itemize}
+    \item
+      Something you haven't solved.
+    \item
+      Something else you haven't solved.
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+
+% All of the following is optional and typically not needed. 
+\appendix
+\section<presentation>*{\appendixname}
+\subsection<presentation>*{For Further Reading}
+
+\begin{frame}[allowframebreaks]
+  \frametitle<presentation>{For Further Reading}
+    
+  \begin{thebibliography}{10}
+    
+  \beamertemplatebookbibitems
+  % Start with overview books.
+
+  \bibitem{Author1990}
+    A.~Author.
+    \newblock {\em Handbook of Everything}.
+    \newblock Some Press, 1990.
+ 
+    
+  \beamertemplatearticlebibitems
+  % Followed by interesting articles. Keep the list short. 
+
+  \bibitem{Someone2000}
+    S.~Someone.
+    \newblock On this and that.
+    \newblock {\em Journal of This and That}, 2(1):50--100,
+    2000.
+  \end{thebibliography}
+\end{frame}
+\end{document}
+
+
