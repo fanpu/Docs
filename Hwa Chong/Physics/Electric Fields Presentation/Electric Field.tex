@@ -107,9 +107,9 @@
     \small
     \begin{tabular}{|c|c|c|c|} \hline
        & Charge & Mass \\ \hline
-       Electron & -e  = 1.60 x 10-19 C & 9.11 x 10-31 kg \\ \hline
-       Proton & +e = 1.60 x 10-19 C & 1.67 x 10-27 kg \\ \hline
-       Neutron & No charge (0 C) & 1.68 x 10-27 kg \\ \hline
+       Electron & \(-e  = 1.60 x 10^{-19} C \) & \(9.11 x 10^{-31} kg\) \\ \hline
+       Proton & \( +e = 1.60 x 10^{-19} C \) & \(1.67 x 10^{-27} kg\) \\ \hline
+       Neutron & No charge (0 C) & \(1.68 x 10^{-27} kg\) \\ \hline
     \end{tabular}
     \captionof{table}{Let's see who can memorize this table the fastest}
   \end{center}%
@@ -127,7 +127,7 @@ If a system starts out with an equal number of positive and negative charges, th
 
 \begin{frame}
 \begin{block}{Principle of Quantization of Charges}
-The charge on a single electron is \(q_e=1.60\cdot10^{19}C\) (remember that \(1C=6.242\cdot 10^{18}e\)). All other charges in the universe consist of an integer multiple of this charge. This is known as charge quantisation:
+The charge on a single electron is \(q_e=1.60\cdot10^{-19}C\) (remember that \(1C=6.242\cdot 10^{18}e\)). All other charges in the universe consist of an integer multiple of this charge. This is known as charge quantisation:
 \[Q=nq_e\]
 \end{block}
 Electrons and protons are not the only things that carry charge. Other particles (positrons, for example) also carry charge in multiples of the electronic charge.  
@@ -207,7 +207,7 @@ Where do electrons play football? On an electric field!
 \end{frame}
 
 \begin{frame}{Force between Two Point Charges}
-  \begin{block}{Coloumb's Law}
+  \begin{block}{Couloumb's Law}
 The magnitude of the electrical force acting between two point charges is proportional to the product of the magnitude of the charges and inversely proportional to the square of the distance between them.
 \[F=\frac{1}{4\pi \epsilon_0} \cdot \frac{QQ\prime}{r^2} \]
   \end{block}
@@ -216,7 +216,7 @@ The magnitude of the electrical force acting between two point charges is propor
 \begin{frame}{Permittivity}{}
   \begin{itemize}
   \item Permittivity is the measure of the resistance that is encountered when forming an electric field in a medium. In other words, permittivity is a measure of how an electric field affects, and is affected by, a dielectric medium.
-  \item \(\epsilon_0\) is equal to approximately \(8.85 \cdot 10^{12}\) farad per meter \(Fm^{-1}\) in free space (a vacuum)
+  \item \(\epsilon_0\) is equal to approximately \(8.85 \cdot 10^{-12}\) farad per meter \(Fm^{-1}\) in free space (a vacuum)
   \end{itemize}
 \end{frame}
 
@@ -230,7 +230,7 @@ Let's work out Example 2 together.
 
 \begin{frame}{Electric Field around a Point Charge}{}
   \begin{itemize}
-  \item Recall Coloumb's Law
+  \item Recall Coulomb's Law
 \[F=\frac{1}{4\pi \epsilon_0} \cdot \frac{Qq}{r^2} \]
 \begin{block}{Electric Field Strength}
 The magnitude of the electric field strength of a point charge \(Q\) at a distance \(r\) away from the field is
@@ -274,8 +274,128 @@ The electric potential V, at a point in an electric field, is defined as the wor
   \end{itemize}
 \end{frame}
 
+\begin{frame}{Electric Potential}{}
+Potential energy is the capacity for doing work which arises from position or configuration. In the electrical case, a charge will exert a force on any other charge and potential energy arises from any collection of charges. For example, if a positive charge Q is fixed at some point in space, any other positive charge which is brought close to it will experience a repulsive force and will therefore have potential energy.
+\end{frame}
 
-\begin{frame}{Template}{}
+\begin{frame}{Potential due to a Point charge}{}
+Electric potential in a field can arise due to a point charge Q, which is given by
+\begin{block}{Electric Potential}
+\[V=\frac{1}{4\pi \epsilon_0} \cdot \frac{Q}{r} \]
+\end{block}
+  \begin{itemize}
+  \item The potential at a point can always be determined by
+  \[V_{resultant} = V_1 + V_2 + V_3...\]
+  \item Let's work on example 4 together.
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Electric Potential Energy}{}
+\begin{block}{Electric Potential Energy}
+The electric potential energy, \(U\) of a charge at a point in an electric field is defined as the work done by an external agent in moving the charge from infinity to that point.
+\end{block}
+\end{frame}
+
+\begin{frame}{Electric Potential Energy}{}
+\begin{block}{Relationships between \(U\) and \(V\)}
+\[U=qV\]
+\end{block}
+  \begin{itemize}
+  \item Recall that potential energy in gravitational field is \(U=m\phi \)
+  \item Notice any similarities?
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Electric Potential Energy}{}
+\begin{block}{Relationships between \(U\) and \(V\)}
+Work done by the external agent in moving a charge Q from point A to point B in an electric field is given by
+\[U_{A\to B}=U_B-U_A=Q(V_B-V_A)\]
+\end{block}
+Similar to gravitational potential energy, the electric potential energy is stored in a system of charges and not possessed by a single charge \(Q\).
+\end{frame}
+
+\begin{frame}{Electric Potential Energy}{}
+  \begin{itemize}
+  \item Work done in moving a charge from point A to point B, and 
+  \item The change in potential energy is independent of the path taken
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Potential Energy of a System of Two Point Charges}{}
+  \begin{itemize}
+  \item Given two charges \(Q_1\) and \(Q_2\) separated by a distance \(r\). \(Q_1\) sets up an electric field around the region and Q2 is in the electric field of \(Q_1\). Hence, 
+  \item Potential of the electric field by Q1 at where Q2 is	 \[V=\frac{Q_1}{4\pi \epsilon_0 r}\]
+  \item Multiplying both sides by \(Q_2\), we get the potential energy of the system, \(U\)
+\begin{block}{Potential Energy Between Two Point Charges}
+  \[U=Q_2V = \frac{Q_1Q_2}{4\pi \epsilon_0 r}\]
+\end{block}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Potential Energy of a System of Two Point Charges}{}
+Since any negative sign on the charge represents the direction, the magnitude can be found by ignoring the charge and including it afterwards when the magnitude of potential energy is obtained.
+\end{frame}
+
+\begin{frame}{Potential Energy of a System of Two or More Charges}{}
+We will demonstrate the potential energy of a system with three charges
+  \begin{itemize}
+  \item Step One: Bring \(q_1\) from infinity to the point.  As there is no electric field initially in the region, work done \[W_1=0J\]
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Potential Energy of a System of Two or More Charges}{}
+  \begin{itemize}
+  \item Step Two: Bring \(q_2\) from infinity to the point.  As \(q_1\) is already in place, it would have set up an electric field in the region and an external force will need to do work against the electrical force experienced by \(q_2\) due to its interaction with the field set up by \(q_1\). Hence, work done
+  \[W_2=\frac{q_1 q_2}{4\pi \epsilon_0 r_{12}}\]
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Potential Energy of a System of Two or More Charges}{}
+  \begin{itemize}
+  \item Step Three: We bring \(q_3\) from infinity to its position in the electric field.  Since, \(q_1\) and \(q_2\) are now in place, the electric field in the region is now due to \(q_1\) and \(q_2\), and the external force will need to do work against the force on \(q_3\) due to its interaction with the field set up by both \(q_2\) and \(q_3\). Hence, the work done in this process is
+  \[W_3=\frac{q_1 q_3}{4\pi \epsilon_0 r_{13}} + \frac{q_2 q_3}{4\pi \epsilon_0 r_{23}}\]
+  \item For more charges, use the same idea
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Potential Energy of a System of Two or More Charges}{}
+  \begin{itemize}
+  \item Hence, the net potential energy of the system is the net work to assemble the system:
+Potential energy of this system, \(U=W_{12} + W_{13} + W{23} \)
+\[=\frac{q_1 q_2}{4\pi \epsilon_0 r_{12}} + \frac{q_1 q_3}{4\pi \epsilon_0 r_{13}} + \frac{q_2 q_3}{4\pi \epsilon_0 r_{23}}\]
+  \item For more charges, use the same concept
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Derivation of Electrical Force}{}
+\[U=\int_{\infty}^r F_{ext}dr\]
+\[\frac{dU}{dr}=F_{ext}\]
+but \(F_E = -F_{ext}\)
+\[F_E=-\frac{dU}{dr}\] 
+\end{frame}
+
+\begin{frame}{Electrical Force}{}
+\begin{block}{Relation between Potential Energy and Electrical Force}
+From here, we can see that:
+\[F=-\frac{dU}{dr}\]
+\end{block}
+  \begin{itemize}
+  \item Magnitude of force given by
+\[F=\left|\frac{dU}{dr}\right(|\]
+  \item The direction of the force on the charge is given by the negative (-) sign i.e. the force on the charge points towards a decreasing potential energy (towards the point that allows the charge to achieve a lower energy).
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{template}{}
+\begin{block}{Relationships between \(U\) and \(V\)}
+\[F=-\frac{dU}{dr}\]
+\[qE=-\frac{dqV}{dr}\]
+\[E=-\frac{dV}{dr}\]
+
+\end{block}
   \begin{itemize}
   \item first
   \item second
@@ -283,75 +403,36 @@ The electric potential V, at a point in an electric field, is defined as the wor
 \end{frame}
 
 
-%%%OLD STUFF
-\begin{frame}{Blocks}
-\begin{block}{Block Title}
-You can also highlight sections of your presentation in a block, with it's own title
+\begin{frame}{template}{}
+\begin{block}{Relationships between \(U\) and \(V\)}
+lel
 \end{block}
-\begin{theorem}
-There are separate environments for theorems, examples, definitions and proofs.
-\end{theorem}
-\begin{example}
-Here is an example of an example block.
-\end{example}
+  \begin{itemize}
+  \item first
+  \item second
+  \end{itemize}
 \end{frame}
 
-% Placing a * after \section means it will not show in the
-% outline or table of contents.
+
+
+
 \section*{Summary}
 
 \begin{frame}{Summary}
   \begin{itemize}
-  \item
-    The \alert{first main message} of your talk in one or two lines.
-  \item
-    The \alert{second main message} of your talk in one or two lines.
-  \item
-    Perhaps a \alert{third message}, but not more than that.
-  \end{itemize}
-  
-  \begin{itemize}
-  \item
-    Outlook
-    \begin{itemize}
-    \item
-      Something you haven't solved.
-    \item
-      Something else you haven't solved.
-    \end{itemize}
+  \item The electric field is a field of force
+  \item \(E=\frac{F}{q}\)
+  \item Rules for drawing electric fields
+  \item Coulomb's law
+  \[F=\frac{1}{4\pi \epsilon_0} \cdot \frac{QQ\prime}{r^2} \]
+  \item Electric Field
+  \item Electric Potential
+  \
   \end{itemize}
 \end{frame}
 
-
-
-% All of the following is optional and typically not needed. 
-\appendix
-\section<presentation>*{\appendixname}
-\subsection<presentation>*{For Further Reading}
-
-\begin{frame}[allowframebreaks]
-  \frametitle<presentation>{For Further Reading}
-    
-  \begin{thebibliography}{10}
-    
-  \beamertemplatebookbibitems
-  % Start with overview books.
-
-  \bibitem{Author1990}
-    A.~Author.
-    \newblock {\em Handbook of Everything}.
-    \newblock Some Press, 1990.
- 
-    
-  \beamertemplatearticlebibitems
-  % Followed by interesting articles. Keep the list short. 
-
-  \bibitem{Someone2000}
-    S.~Someone.
-    \newblock On this and that.
-    \newblock {\em Journal of This and That}, 2(1):50--100,
-    2000.
-  \end{thebibliography}
+\begin{frame}{End}
+That's all for today - Any Questions?
 \end{frame}
 \end{document}
 
