@@ -389,32 +389,130 @@ From here, we can see that:
   \end{itemize}
 \end{frame}
 
-\begin{frame}{template}{}
-\begin{block}{Relationships between \(U\) and \(V\)}
+\begin{frame}{Potential Gradient}{}
+\begin{block}{Relation between Potential Gradient and Electric Field Strength}
 \[F=-\frac{dU}{dr}\]
 \[qE=-\frac{dqV}{dr}\]
 \[E=-\frac{dV}{dr}\]
-
 \end{block}
   \begin{itemize}
-  \item first
-  \item second
+  \item \(\frac{dV}{dr}\) is known as the potential gradient of the field.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Equipotential Lines or Surfaces}{}
+\begin{definition}{}
+An equipotential surface is a surface in which every point on the surface is at the same potential.
+\end{definition}
+\begin{figure}
+\includegraphics[scale=0.2]{equipotential}
+\caption{Equipotential Lines}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Equipotential Lines or Surfaces}{}
+\begin{itemize}
+  \item Field strength: Spacing of equipotential lines
+  \item Field lines and equipotential lines cut at right angles
+  \item Field direction: Towards lower potential
+  \end{itemize}
+\begin{figure}
+\includegraphics[scale=0.2]{equipotential}
+\caption{Equipotential Lines}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Charges in Equilibrium on Conductors}{}
+  \begin{itemize}
+  \item Charged conductors that have reached electrostatic equilibrium share a variety of unusual characteristics. 
+  \item One characteristic of a conductor at electrostatic equilibrium is that the electric field anywhere beneath the surface of a charged conductor is zero. 
+  \item If an electric field did exist beneath the surface of a conductor (and inside of it), then the electric field would exert a force on all electrons that were present there. 
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Charges in Equilibrium on Conductors}{}
+  \begin{itemize}
+  \item This net force would begin to accelerate and move these electrons. But objects at electrostatic equilibrium have no further motion of charge about the surface. So if this were to occur, then the original claim that the object was at electrostatic equilibrium would be a false claim.
+  \item If the electrons within a conductor have assumed an equilibrium state, then the net force upon those electrons is zero. 
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Charges in Equilibrium on Conductors}{}
+  \begin{itemize}
+   \item The electric field lines either begin or end upon a charge and in the case of a conductor, the charge exists solely upon its outer surface. 
+  \item The lines extend from this surface outward, not inward. This of course presumes that our conductor does not surround a region of space where there was another charge.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Additional rules on drawing Electric Field/Equipotential Lines}{}
+  \begin{enumerate}
+   \item Electric field along the surface is zero
+   \item The surface of a conductor is an equipotential surface
+   \item The potential in the conductor is constant everywhere inside the conductor and equal to its value at the surface
+   \item Electric field in the conductor is therefore zero. (No potential gradient) Hence, no field lines are drawn.
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{Electric Field between Two Charged Parallel Plates}{}
+  \begin{itemize}
+	\item The charges on each plate are spread uniformly over the inside surface of each plate because of their mutual repulsion and the attraction by the opposite charges on the other plate.
+	\item The lines of forces are straight, parallel to each other and equally spaced.
+  \end{itemize}
+\begin{figure}
+\includegraphics[scale=0.4]{parallelplates}
+\caption{Electric Field between two parallel oppositely charged plates}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Electric Field between Two Charged Parallel Plates}{}
+  \begin{itemize}
+	\item The electric field in the space between the two plates is said to be uniform.
+  \end{itemize}
+  \begin{block}{Magnitude of Electric Field Strength}
+\[E=\frac{V}{d}\]
+\end{block}
+\begin{figure}
+\includegraphics[scale=0.4]{parallelplates}
+\caption{Electric Field between two parallel oppositely charged plates}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Motion of Charged Particles in a Uniform Electric Field}{}
+  \begin{itemize}
+	\item Consider a particle of mass \(m\), carrying charge \(q\) and placed in an uniform electric field \(E\).
+	\item The field exerts a force \(qE\) on it, giving it an acceleration \(a\) in the direction of the force.
+	\item By N2L, \(ma=qE\)
+	\item Acceleration of the charge is therefore given by
+	\[a=\frac{qE}{m} \]
+	\item Note that in most questions, the mass is so small that the electric force overwhelms the gravitational force on the mass (weight). Hence the weight can be ignored.   
   \end{itemize}
 \end{frame}
 
 
-\begin{frame}{template}{}
-\begin{block}{Relationships between \(U\) and \(V\)}
-lel
+\begin{frame}{Gauss's Law}{}
+\texttt{https://www.youtube.com/watch?v=QNIJC1emss8}
+\begin{block}{Gauss's Law}
+The net electric flux through any closed surface is equal to \(\frac{1}{\epsilon_0}\) times the net electric charge enclosed within that closed surface.
 \end{block}
   \begin{itemize}
-  \item first
-  \item second
+  \item It was formulated by Carl Friedrich Gauss in 1835, and finally published in 1867.
+  \item It is one of the four Maxwell’s equations, forming the basis of classical electrodynamics.
+  \item Gauss’s Law can be used to derive Coulomb’s Law, and vice versa.
   \end{itemize}
 \end{frame}
 
-
-
+\begin{frame}{Gauss's Law}{}
+Integral form:
+\[\oint_S {E_n dA = \frac{1}{{\varepsilon _0 }}} Q_{inside}\]
+Differential form:
+\[\nabla E=\frac{\rho}{\epsilon_0}=4\pi k\rho\]
+  \begin{itemize}
+  \item Its integral form is useful for calculating electric fields around charged objects.
+  \item Its differential form is mathematically equivalent to its integral form.
+  \item \(\nabla E\) is the divergence of the electric field, \(\epsilon_0\) is the electric constant, and \(\rho\) is the total electric charge density (charge per unit volume).
+  \end{itemize}
+\end{frame}
 
 \section*{Summary}
 
@@ -427,12 +525,26 @@ lel
   \[F=\frac{1}{4\pi \epsilon_0} \cdot \frac{QQ\prime}{r^2} \]
   \item Electric Field
   \item Electric Potential
-  \
+  \item Electric Potential Energy
+  \item Potential Energy of a System of Two or More Point Charges
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Summary}
+  \begin{itemize}
+  \item Potential Energy of a System of Two or More Point Charges
+  \item Electrical Force
+  \item Potential Gradient
+  \item Equipotential Lines
+  \item Charges in Equilibrium on Conductors
+  \item Electric field between Parallel Charged Plates
+  \item Motion of Charged Particles in an Uniform Electric Field
+  \item Gauss's Law
   \end{itemize}
 \end{frame}
 
 \begin{frame}{End}
-That's all for today - Any Questions?
+We have come to the end of our presentation. We hope you have enjoyed it.
 \end{frame}
 \end{document}
 
